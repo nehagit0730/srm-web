@@ -129,65 +129,73 @@ export default function Contact1() {
       required
     />
   </div>
-                {/* Vehicle Condition Section */}
-                <div className="mb-4 p-3  dark:text-white">
-    <h3 className="text-lg font-semibold mb-2">
-                    Vehicle Condition
-                  </h3>
-                  <p className="text-sm mb-3">
-                    Please indicate any panel damage and tyre wear your
-                    current car has:
-                  </p>
-  </div>
-                <div
+               {/* Vehicle Condition Section */}
+<div className="p-3 dark:text-white">
+  <h3 className="text-lg font-semibold mb-2">Vehicle Condition</h3>
+  <p className="text-sm mb-3">
+    Please indicate any panel damage and tyre wear your current car has:
+  </p>
+</div>
+<div
   className="mt-4 position-relative"
   style={{
     backgroundImage: "url('/assets/images/contact/c2.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    fontSize: "13px",
   }}
 >
+  {[
+    [
+      { label: "Rear LH Wing", options: ["Scratches", "Dents"] },
+      { label: "Rear LH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
+      { label: "Rear LH Door", options: ["Scratches", "Dents"] },
+      { label: "Front LH Door", options: ["Scratches", "Dents"] },
+      { label: "Front LH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
+      { label: "Front LH Wing", options: ["Scratches", "Dents"] },
+    ], // first 6
 
-                  <div
-                    style={{ flexWrap: "wrap" }}
-                    className="d-flex lg:justify-between gap-8"
-                  >
-                    {[
-                      { label: "Rear LH Wing", options: ["Scratches", "Dents"] },
-                      { label: "Rear LH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
-                      { label: "Rear LH Door", options: ["Scratches", "Dents"] },
-                      { label: "Front LH Door", options: ["Scratches", "Dents"] },
-                      { label: "Front LH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
-                      { label: "Front LH Wing", options: ["Scratches", "Dents"] },
-                      { label: "Rear Bumper", options: ["Scratches", "Dents"] },
-                      { label: "Boot Lid", options: ["Scratches", "Dents"] },
-                      { label: "Roof", options: ["Scratches", "Dents"] },
-                      { label: "Bonnet", options: ["Scratches", "Dents"] },
-                      { label: "Front Bumper", options: ["Scratches", "Dents"] },
-                      { label: "Rear RH Wing", options: ["Scratches", "Dents"] },
-                      { label: "Rear RH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
-                      { label: "Rear RH Door", options: ["Scratches", "Dents"] },
-                      { label: "Front RH Door", options: ["Scratches", "Dents"] },
-                      { label: "Front RH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
-                      { label: "Front RH Wing", options: ["Scratches", "Dents"] },
-                    ].map((item, idx) => (
-                      <div style={{ background: "rgb(255 255 255 / 68%)" }} key={idx} className="border p-1 rounded">
-                        <p className="fw-bold text-sm">{item.label}</p>
-                        <div className="d-flex flex-column flex-wrap mt-1">
-                          {item.options.map((opt, i) => (
-                            <label
-                              key={i}
-                              className="d-flex items-center gap-1 text-sm"
-                            >
-                              <input type="checkbox" name={`${item.label}-${opt}`} />
-                              {opt}
-                            </label>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
+    [
+      { label: "Rear Bumper", options: ["Scratches", "Dents"] },
+      { label: "Boot Lid", options: ["Scratches", "Dents"] },
+      { label: "Roof", options: ["Scratches", "Dents"] },
+      { label: "Bonnet", options: ["Scratches", "Dents"] },
+      { label: "Front Bumper", options: ["Scratches", "Dents"] },
+    ], // next 5
+
+    [
+      { label: "Rear RH Wing", options: ["Scratches", "Dents"] },
+      { label: "Rear RH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
+      { label: "Rear RH Door", options: ["Scratches", "Dents"] },
+      { label: "Front RH Door", options: ["Scratches", "Dents"] },
+      { label: "Front RH Tyre", options: ["1-3mm", "3-5mm", "5-9mm"] },
+      { label: "Front RH Wing", options: ["Scratches", "Dents"] },
+    ], // last 6
+  ].map((group, gIdx) => (
+    <div
+      key={gIdx}
+      className="d-flex lg:justify-between gap-8 flex-wrap pt-6 mb-6"
+    >
+      {group.map((item, idx) => (
+        <div
+          key={idx}
+          style={{ background: "rgb(255 255 255 / 68%)" }}
+          className="border p-1 rounded"
+        >
+          <p className="fw-bold text-sm">{item.label}</p>
+          <div className="d-flex flex-column flex-wrap mt-1">
+            {item.options.map((opt, i) => (
+              <label key={i} className="d-flex items-center gap-1 text-sm">
+                <input type="checkbox" name={`${item.label}-${opt}`} />
+                {opt}
+              </label>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  ))}
+</div>
 
                 {/* Submit */}
                 <button
