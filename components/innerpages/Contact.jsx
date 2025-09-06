@@ -1,5 +1,5 @@
 "use client";
-
+import ContactMobile from "./ContactMobile";
 export default function Contact1() {
   return (
     <div id="hero_header" className="hero-header section panel overflow-hidden">
@@ -137,7 +137,7 @@ export default function Contact1() {
   </p>
 </div>
 <div
-  className="mt-4 position-relative"
+  className="mt-4 position-relative d-none lg:d-block"
   style={{
     backgroundImage: "url('/assets/images/contact/c2.png')",
     backgroundSize: "cover",
@@ -196,7 +196,7 @@ export default function Contact1() {
     </div>
   ))}
 </div>
-
+<ContactMobile />
                 {/* Submit */}
                 <button
                   className="btn btn-primary btn-md text-white mt-2"
