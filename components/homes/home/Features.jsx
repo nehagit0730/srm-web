@@ -41,7 +41,7 @@ export default function Features() {
                     className="text-decoration-none group"
                   >
                     <div
-                      className={`features-item relative overflow-hidden rounded-2 shadow-sm hover:shadow-md transition-shadow duration-300 ${item.bgClass || ""}`}
+                      className={`features-item relative h-500px overflow-hidden rounded-2 shadow-sm hover:shadow-md transition-shadow duration-300 ${item.bgClass || ""}`}
                     >
                       {/* Image */}
                       <Image
@@ -56,8 +56,8 @@ export default function Features() {
                       <div className="absolute inset-0 bg-black/50"></div>
 
                       {/* Content (always visible) */}
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-black p-6 z-10">
-                        <h3 className="title h5 xl:h4 m-0">{item.title}</h3>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-black p-4 z-10">
+                        <h3 className="title h6 m-0">{item.title}</h3>
                         <p className="desc dark:text-white fs-7 xl:fs-6 opacity-90 mt-1">
                           {item.description}
                         </p>
