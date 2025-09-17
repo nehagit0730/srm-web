@@ -52,7 +52,7 @@ export const features = [
 export const featureItems = [
   {
     order: "order-1 lg:order-0",
-    imgSrc: "/assets/images/homepage/s1.jpg",
+    imgSrc: "/assets/images/homepage/Detailing.jpg",
     alt: "CAR DETAILING ",
     title: "CAR DETAILING ",
     description: "Car Detailing- Bring Your Car Back To Life",
@@ -70,7 +70,7 @@ export const featureItems = [
   },
   {
     order: "order-2 sm:order-1 lg:order-0",
-    imgSrc: "/assets/images/homepage/s3.jpg",
+    imgSrc: "/assets/images/homepage/Cosmetic_repairs.jpg",
     alt: "COSMETIC",
     title: "COSMETIC",
     description: "Cosmetic Repairs & Styling – Make Your Car Stand Out",
@@ -88,7 +88,7 @@ export const featureItems = [
   },
   {
     order: "order-3 lg:order-0",
-    imgSrc: "/assets/images/homepage/s5.jpg",
+    imgSrc: "/assets/images/homepage/Bumper_scuffs.jpg",
     alt: "BUMPER SCUFF",
     title: "BUMPER SCUFF",
     description: "Bumper Scuff Repairs – Full or Smart Solutions",
@@ -97,7 +97,7 @@ export const featureItems = [
   },
   {
     order: "order-2 lg:order-0",
-    imgSrc: "/assets/images/homepage/s6.jpg",
+    imgSrc: "/assets/images/homepage/Full_panel_replacement.jpg",
     alt: "FULL PANEL REPLACEMENT",
     title: "FULL PANEL REPLACEMENT",
     description: "Panel Replacement – Precision Fit & Perfect Alignment",
@@ -115,7 +115,7 @@ export const featureItems = [
   },
   {
     order: "order-2 lg:order-0",
-    imgSrc: "/assets/images/homepage/s8.jpg",
+    imgSrc: "/assets/images/homepage/Colour_matching.jpg",
     alt: "COLOUR MATCHING",
     title: "COLOUR MATCHING",
     description: "Colour Matching – Precision Backed by Experience",
