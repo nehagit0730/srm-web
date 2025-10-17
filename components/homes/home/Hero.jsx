@@ -18,7 +18,7 @@ export default function Hero() {
           priority
           className="object-cover"
         />
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-10"></div>
       </div>
 
       {/* Content */}
