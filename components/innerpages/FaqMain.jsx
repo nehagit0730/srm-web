@@ -19,7 +19,7 @@ export default function FaqMain() {
             >
               <h2 className="h3 lg:h2 mb-4">FAQs</h2>
               <p className="fs-5 xl:fs-4 text-dark dark:text-white text-opacity-70">
-                Everything you need to know about the product and billing.
+                Everything you need to know about the product and services.
                     Can’t find the answer you’re looking for?
               </p>
               <div className="panel pb-6">
