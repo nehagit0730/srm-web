@@ -88,7 +88,7 @@ export const featureItems = [
   },
   {
     order: "order-3 lg:order-0",
-    imgSrc: "/assets/images/homepage/Bumper_scuffs.jpg",
+    imgSrc: "/assets/images/homepage/BUMP_SCRATCH_SMASH.jpg",
     alt: "BUMPER SCUFF",
     title: "BUMPER SCUFF",
     description: "Bumper Scuff Repairs – Full or Smart Solutions",
@@ -106,7 +106,7 @@ export const featureItems = [
   },
   {
     order: "order-2 lg:order-0",
-    imgSrc: "/assets/images/homepage/s7.jpg",
+    imgSrc: "/assets/images/homepage/ALLOY_WHEEL_REPAIR.jpg",
     alt: "WHEEL REFURB ",
     title: "WHEEL REFURB ",
     description: "Wheel Refurbishment – Restore Factory Finish & Style",
@@ -124,7 +124,7 @@ export const featureItems = [
   },
   {
     order: "order-2 lg:order-0",
-    imgSrc: "/assets/images/homepage/s9.jpg",
+    imgSrc: "/assets/images/homepage/ALL_THINGS_BODYWORK.jpg",
     alt: "ALL THINGS BODYWORK ",
     title: "ALL THINGS BODYWORK ",
     description: "Complete Bodywork Solutions – We’ve Got You Covered ",
