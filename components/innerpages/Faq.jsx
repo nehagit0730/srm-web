@@ -19,7 +19,7 @@ export default function Faq() {
                   </span>
                   <h2 className="title h3 xl:h2 m-0">FAQs</h2>
                   <p className="desc fs-6 xl:fs-5">
-                    Everything you need to know about the product and billing.
+                    Everything you need to know about the product and services.
                     Can’t find the answer you’re looking for?{" "}
                     <br className="d-none lg:d-block xl:d-none" />
                     Please{" "}
