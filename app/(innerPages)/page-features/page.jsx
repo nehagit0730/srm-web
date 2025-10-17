@@ -1,7 +1,6 @@
 import Header from "@/components/headers/Header";
 import Footer from "@/components/footers/Footer";
 import Services from "@/components/innerpages/Services";
-import KeyFeatures from "@/components/innerpages/features/KeyFeatures";
 export const metadata = {
   title:
     "SRM  || Services",
@@ -15,10 +14,7 @@ export default function FeaturesPage() {
         <Header />
         <div id="wrapper" className="wrap">
           <Services />
-        </div>
-        <div id="wrapper" className="wrap">
-          <KeyFeatures />
-          </div>
+        </div>       
         <Footer />
       </div>
     </>
