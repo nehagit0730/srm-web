@@ -30,11 +30,11 @@ export default function Header() {
       className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky ${
         scrollingUp ? " uc-sticky-below uc-sticky-fixed headerFixed" : ""
       }`}
-      data-uc-sticky="start: 100vh; show-on-up: true; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
+      data-uc-sticky="start: 100vh; show-on-up: false; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
       <nav
         className={`uc-navbar-container uc-navbar-float ft-tertiary z-1 ${
-          scrollingUp ? "uc-navbar-sticky" : "uc-navbar-transparent"
+          scrollingUp ? "uc-navbar-sticky" : "uc-navbar-sticky"
         } `}
         data-anime="translateY: [-40, 0]; opacity: [0, 1]; easing: easeOutExpo; duration: 750; delay: 0;"
       >
