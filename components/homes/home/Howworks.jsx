@@ -82,7 +82,7 @@ Based in Oldham, we proudly serve customers across the North West and beyond. Wi
                       data-uc-accordion="collapsible: false"
                       style={{ "--divider-gap": "40px" }}
                     >
-                      <Accordion />
+                        <a class="btn btn-secondary mt-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" href="/page-faqs">Learn More</a>
                     </ul>
                   </div>
                 </div>
