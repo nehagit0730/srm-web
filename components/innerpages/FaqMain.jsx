@@ -22,6 +22,7 @@ export default function FaqMain() {
                 Everything you need to know about the product and services.
                     Can’t find the answer you’re looking for?
               </p>
+              <br></br>
               <div className="panel pb-6">
                                 <ul className="gap-0" data-uc-accordion="targets: > li;">
                                   <Accordion parentClass="panel py-2" />
