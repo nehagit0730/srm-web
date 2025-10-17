@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="position-absolute top-0 start-0 w-100 h-100">
         <Image
-          src="/assets/images/homepage/banner2.jpg"
+          src="/assets/images/homepage/FRONT_PAGE_BANNER.jpg"
           alt="Car repair banner"
           fill
           priority
