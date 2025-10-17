@@ -27,7 +27,7 @@ export default function Header() {
   }, [prevScrollPos]);
   return (
     <header
-      className={`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky uc-sticky-below uc-sticky-fixed headerFixed
+      className=`uc-header header-default uc-navbar-sticky-wrap z-999 uc-sticky uc-sticky-below uc-sticky-fixed headerFixed
       data-uc-sticky="start: 100vh; show-on-up: false; animation: uc-animation-slide-top; sel-target: .uc-navbar-container; cls-active: uc-navbar-sticky; cls-inactive: uc-navbar-transparent; end: !*;"
     >
       <nav
