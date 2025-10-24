@@ -44,7 +44,7 @@ export default function ContactLinks() {
                       </p>
                       <a
                         href={panel.linkUrl}
-                        className="uc-link fw-bold hstack gap-narrow justify-center"
+                        className="uc-link- fw-bold hstack gap-narrow justify-center"
                       >
                         <span>{panel.linkText}</span>
                         <i className="position-relative icon icon-1 unicon-arrow-right rtl:rotate-180 translate-y-px" />
