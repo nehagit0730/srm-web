@@ -41,6 +41,7 @@ export default function ContactLinks() {
                       <h5 className="h5 m-0">{panel.title}</h5>
                       <p className="fs-6 opacity-70 dark:opacity-80">
                         {panel.description}
+                        {panel.tel}
                       </p>
                       <a
                         href={panel.linkUrl}
