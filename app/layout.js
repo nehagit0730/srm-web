@@ -40,14 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="ltr">
       <body>
-    {" "}
-          {/* ✅ reCAPTCHA script here */}
-        <Script
-        src="https://www.google.com/recaptcha/api.js?render=explicit"
-        strategy="beforeInteractive"        
-        async        
-        defer
-        />
+     
         <Context>
           <ParallaxProvider>{children}</ParallaxProvider>
           <MobileMenu />
@@ -55,29 +48,9 @@ export default function RootLayout({ children }) {
           <NewsletterModal />
           <SearchModal />
           <BacktoTop />
-          // <SpeedInsights/>
-          // <Analytics/>
+           
         </Context>
-    // <Toaster
-    //     toastOptions={{
-    //       duration: 3000,
-    //       style: {
-    //         background: "rgba(0, 0, 0, 0.85)",
-    //         color: "#fff",
-    //         fontSize: "16px",
-    //         padding: "16px 20px",
-    //         borderRadius: "12px",
-    //         maxWidth: "100%",
-    //       },
-    //     }}
-    //     containerStyle={{
-    //       top: "50%",
-    //       left: "50%",
-    //       transform: "translate(-50%, -50%)",
-    //       position: "fixed",
-    //       zIndex: 9999,
-    //     }}
-    //   />
+     
       </body>
     </html>
   );
