@@ -16,7 +16,7 @@ export default function ContactLinks() {
                 Other ways to reach us
               </h2>
               <div
-                className="row child-cols-12 sm:child-cols-6 lg:child-cols-3 g-2 xl:g-3 justify-between col-match"
+                className="row child-cols-12 sm:child-cols-6 lg:child-cols-3 g-2 xl:g-3 justify-center col-match"
                 data-anime="onview: -100; targets: >*; translateY: [48, 0]; opacity: [0, 1]; easing: spring(1, 80, 10, 0); duration: 450; delay: anime.stagger(100, {start: 200});"
               >
                 {panels.map((panel) => (
