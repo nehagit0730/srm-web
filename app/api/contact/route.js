@@ -34,7 +34,7 @@ export async function POST(req) {
 
     // ✅ Send main email to YOU
     await transporter.sendMail({
-      from: `"${name} via GTL Contact Form" <${process.env.EMAIL_USER}>`,
+      from: `"${name} via SRM Contact Form" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_TO,
       replyTo: email,
       subject: subject || "New Request",
@@ -54,32 +54,31 @@ export async function POST(req) {
     const autoReplyHTML = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px;">
         <div style="text-align: center; margin-bottom: 20px;">
-        <a href="https://gtlofficial.com" target="_blank" style="display: inline-block;">
-          <img src="https://gtlofficial.com/assets/images/common/logo-light.png" alt="GTL Logo" width="250" />
+        <a href="https://smart-route-motors.vercel.app" target="_blank" style="display: inline-block;">
+          <img src="https://smart-route-motors.vercel.app/assets/images/branding/logo-light.png" alt="srm vehicle repair centre" width="250" />
           </a>
         </div>
         <h2 style="color: #333;"><span" style="color: #fe8f00;">Hi</span> ${name},</h2>
         <p style="color: #555;">
-          Thanks for reaching out to <strong>GTL Web Solutions</strong>! We've received your message and our team will get back to you within <strong>12 business hours</strong>.
+          Thanks for reaching out to <strong>https://smart-route-motors.vercel.app/assets/images/branding/logo-light.png</strong>! We've received your message and our team will get back to you within <strong>12 business hours</strong>.
         </p>
         <p style="color: #555;">
           Your support ticket number is: <strong>#${ticketNumber}</strong>
         </p>
-        <p style="color: #555;">While you wait, feel free to check out our <a href="https://gtlofficial.com/faq" style="color: #fe8f00;">FAQs</a> or <a href="https://gtlofficial.com/page-contact" style="color: #fe8f00;">Support Page</a>.</p>
+        <p style="color: #555;">While you wait, feel free to check out our <a href="https://smart-route-motors.vercel.app/faq" style="color: #fe8f00;">FAQs</a> or <a href="https://smart-route-motors.vercel.app/page-contact" style="color: #fe8f00;">Support Page</a>.</p>
         <hr style="margin: 30px 0;" />
         <p style="color: #888; font-size: 12px;">
           This is an automated message. If you did not submit this form, please disregard this email.
         </p>
         <p style="color: #888; font-size: 12px;">
-          GTL Web Solutions<br />
-          info@gtlofficial.com | <a href="https://gtlofficial.com" style="color: #888;">www.gtlofficial.com</a>
+          srm.vehiclerepaircentre@gmail.com | <a href="https://smart-route-motors.vercel.app" style="color: #888;">https://smart-route-motors.vercel.app</a>
         </p>
       </div>
     `;
 
     // ✅ Send auto-reply to USER
     await transporter.sendMail({
-      from: `"GTL Team" <${process.env.EMAIL_USER}>`,
+      from: `"SRM Vehicle Repair Centre Team" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: `✅ We've received your message – Ticket #${ticketNumber}`,
       html: autoReplyHTML,
